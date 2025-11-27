@@ -5,7 +5,6 @@ import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 @Controller('positions')
 export class PositionsController {
     constructor(private PositionsService: PositionsService) {}
-
     //Get all user (protected)
     @UseGuards(JwtAuthGuard)
     @Get()
